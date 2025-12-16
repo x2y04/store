@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .my-circle {
+            width: 50px;
+            height: 50px;
+        }
+
+        .my-progress {
+            width: calc(100% - 2 * 20px - 8px * 2);
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/icon.jpg" alt="" width="100" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link fs-5 " href="#"> 活動介紹 </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link fs-5" href="#"> 商品資訊 </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link fs-5" href="#"> 活動資訊</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link fs-5" href="#"> 聯絡方式</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#"><i class="bi bi-cart4 fs-5"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">會員登入</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid bg-dark-subtle px-md-5 px-1 py-5">
+        <section class="container bg-body-tertiary px-md-5 px-3 ms-auto pt-5 pb-1">
+            <h2 class="fs-1 mb-5">購物車</h2>
+            <section class="row">
+                <div class="circle rounded-circle"></div>
+                <div class="circle rounded-circle"></div>
+                <div class="circle rounded-circle"></div>
+                <div class="circle rounded-circle"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col px-0 mx-0 mb-2 text-center">
+                        <div class="w-100 position-relative">
+                            <div
+                                class="mx-auto my-circle rounded-circle bg-success text-white fw-bold d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                            <div class="my-progress progress position-absolute top-50 start-100 translate-middle z-3">
+                                <div class="progress-bar bg-success" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <span>確認訂單</span>
+                    </div>
+                    <div class="col px-0 mx-0 mb-2 text-center">
+                        <div class="w-100 position-relative">
+                            <div
+                                class="mx-auto my-circle rounded-circle bg-success text-white fw-bold d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                            <div class="my-progress progress position-absolute top-50 start-100 translate-middle z-3">
+                                <div class="progress-bar bg-success" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <span>付款與運送方式</span>
+                    </div>
+                    <div class="col px-0 mx-0 mb-2 text-center">
+                        <div class="w-100 position-relative">
+                            <div
+                                class="mx-auto my-circle rounded-circle bg-success text-white fw-bold d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                            <div class="my-progress progress position-absolute top-50 start-100 translate-middle z-3">
+                                <div class="progress-bar bg-success-subtle" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <span>填寫資料</span>
+                    </div>
+                    <div class="col px-0 mx-0 mb-2 text-center">
+                        <div class="w-100 position-relative">
+                            <div
+                                class="mx-auto my-circle rounded-circle bg-secondary-subtle text-secondary fw-bold d-flex justify-content-center align-items-center">
+                                4
+                            </div>
+                        </div>
+                        <span>完成訂購</span>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-3">
+            <h2 class="fs-2 p-2">寄送資料</h2>
+            <div class="container p-4">
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label fs-4">姓名</label>
+                    <div class="d-flex">
+                        <input type="email" class="me-3 form-control p-3" id="exampleInputEmail1" placeholder="王小明">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label fs-4">電話</label>
+                    <div class="d-flex">
+                        <input type="email" class="me-3 form-control p-3" id="exampleInputEmail1"
+                            placeholder="0912345678">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label fs-4 ">Email</label>
+                    <div class="d-flex">
+                        <input type="email" class="me-3 form-control p-3" id="exampleInputEmail1"
+                            placeholder="ex123@gmail.com">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label fs-4">地址</label>
+                    <div class="d-flex mb-4">
+                        <input type="email" class="me-3 form-control p-3" id="exampleInputEmail1" placeholder="縣市">
+                        <input type="email" class="form-control p-3" id="exampleInputEmail1" placeholder="郵遞區號">
+                    </div>
+                    <div class="d-flex">
+                        <input type="email" class="me-3 form-control p-3" id="exampleInputEmail1" placeholder="地址">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col text-center d-flex justify-content-end me-3">
+                <div class="row row-cols-2 text-end w-50 ">
+                    <div class="col ">數量:</div>
+                    <div class="col">5</div>
+                    <div class="col">小計:</div>
+                    <div class="col">¥15,500</div>
+                    <div class="col">運費:</div>
+                    <div class="col">¥16,700</div>
+                    <div class="col">總計:</div>
+                    <div class="col">¥1,200</div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="col-auto my-5 d-flex justify-content-between">
+                <a href="./Page-2.html" type="button" class="btn btn-outline-primary mb-3 fs-5">上一步 </a>
+                <a href="./Page-4.html" type="submit" class="btn btn-primary mb-3 fs-5">下一步</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="container-fluid">
+        <div class="bg-white row row-cols-1 row-cols-sm-2 row-cols-lg-5 text-center text-sm-start px-5 pt-5">
+            <!-- logo區 -->
+            <div class="col col-sm-12 col-lg-3 px-5 pb-5 g-1">
+                <div class="d-flex justify-content-center align-items-center mb-2 mb-sm-4">
+                    <!-- logo -->
+                    <img src="./img/icon.jpg" class="w-25" alt="">
+                    <div class="fs-5 fw-bold text-center ps-3 ">Kuzuha Celebration POPUP-STORE</div>
+                </div>
+                <!-- 說明文字 -->
+                <span class="fs-6">以「夜色與旋律」為主題，重現葛葉的舞台氛圍。 活動現場販售限定周邊、展示特別視覺與留言牆， 邀你一同紀念這屬於粉絲與他的特別時刻。</span>
+            </div>
+            <div class="col col-sm-6 col-lg-2 mb-sm-4">
+                <ul class="d-grid gap-0 row-gap-3 ">
+                    <h4 class="fw-bold">活動介紹</h4>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            關於葛葉周年快閃店</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            主題概念「夜色與旋律」</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            現場特別展示與留言牆</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            限定合作視覺介紹</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-sm-6 col-lg-2 mb-sm-4 p-0 ">
+                <ul class="d-grid gap-0 row-gap-3">
+                    <h4 class="fw-bold">商品資訊</h4>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            限定週邊商品清單</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            隨機特典與抽獎活動</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            線上預購與現場販售方式</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            購買注意事項</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-sm-6 col-lg-2 p-0">
+                <ul class="d-grid gap-0 row-gap-3">
+                    <h4 class="fw-bold">活動資訊</h4>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            期間：2025/11/10~11/24</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            時間：每日 11:00-20:00</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            地點：Six Gallery Harajuku
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            入場與排隊規範</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-sm-6 col-lg-2 p-0">
+                <ul class="d-grid gap-0 row-gap-3">
+                    <h4 class="fw-bold">聯絡方式</h4>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            客服信箱：info@nijisanji.jli</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            主辦單位：ANYCOLOR
+                            Inc.</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            協力：NIJISANJI 官方</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" target="_blank""
+                            class=" text-dark link-underline link-underline-opacity-0">
+                            常見問題（FAQ）</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul class="bg-body-tertiary d-flex justify-content-between m-0 py-2">
+                <div class="fw-bold">© 2025 ANYCOLOR Inc.</div>
+                <div class="f-3">
+                    <a href="#" target="_blank""><i class=" bi bi-facebook me-2 text-dark"></i></a>
+                    <a href="#" target="_blank""><i class=" bi bi-twitter-x me-2 text-dark"></i></a>
+                    <a href="http://" target="_blank""><i class=" bi bi-instagram me-2 text-dark"></i></a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
